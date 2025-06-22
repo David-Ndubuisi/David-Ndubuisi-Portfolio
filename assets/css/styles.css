@@ -9,10 +9,10 @@
     cursor: default;
 }
 :root {
-    --bg-color: #e6e6e6;
-    --second-bg-color: #f8f9fa;
-    --text-color: #333333;
-    --main-color: #00cc66;
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: White;
+    --main-color: #00ffee;
 }
 
 html {
@@ -30,7 +30,7 @@ body{
     left: 0;
     width: 100%;
     padding: 4rem 12% 4rem;
-    background: rgba(230, 230, 230, 0.3);
+    background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -47,6 +47,9 @@ body{
 }
 .logo:hover{
     transform: scale(1.1);
+}
+.logo span{
+    text-shadow: 0 0 25px var(--main-color);
 }
 .navbar a{
     font-size: 1.8rem;
@@ -111,12 +114,12 @@ span{
     top: 3rem;
     width: 32vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px var(--bg-color);
+    box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
 .home_img img:hover{
-    box-shadow: 0 0 25px var(--bg-color), 0 0 50px var(--bg-color), 0 0 100px var(--main-color);
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color), 0 0 100px var(--main-color);
 }
 .home-content p{
     font-size: 1.5rem;
@@ -172,7 +175,7 @@ span{
     gap: 1.5rem;
 }
 .btn-group a:nth-of-type(2){
-    background-color: #e6e6e6;
+    background-color: black;
     color: var(--main-color);
     border: 2px solid var(--main-color);
     box-shadow: 0 0 25px transparent;
@@ -314,7 +317,7 @@ span{
 .timeline-date{
     font-size: 20px;
     font-weight: 800;
-    color: --text-color;
+    color: white;
     margin: 6px 0 15px;
 }
 .timeline-content{
@@ -332,13 +335,13 @@ span{
 }
 .timeline-content h3{
     font-size: 20px;
-    color: --text-color;
+    color: white;
     margin: 0 0 10px;
     font-weight: 500;
     cursor: pointer;
 }
 .timeline-content p{
-    color: --text-color;
+    color: white;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
@@ -363,7 +366,7 @@ span{
 }
 .services h2{
     margin-bottom: 5rem;
-    color: --text-color;
+    color: white;
 }
 .services_container{
     display: grid;
@@ -443,8 +446,8 @@ span{
 .testimonial-box img{
     width: 15rem;
     border-radius: 50%;
-    border: 2px solid var(--main-color);
-    box-shadow: 0 0 25px var(--bg-color);
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
 }
 .wrapper{
     display: grid;
@@ -454,7 +457,7 @@ span{
 .testimonial-item{
     min-height: 460px;
     max-width: 450px;
-    background: rgba(231, 231, 231, 1);
+    background: rgba(0, 0, 0, 0.7);
     border: 3px solid rgba(238, 238, 238, 0.2);
     border-radius: 2rem;
     margin: 0 2rem;
@@ -465,7 +468,7 @@ span{
     justify-content: center;
     text-align: center;
     gap: 1.5rem;
-    color: --text-color;
+    color: white;
     transition: 0.4s ease-in-out;
 }
 .testimonial-item:hover{
@@ -490,7 +493,7 @@ span{
 }
 .contact h2{
     margin-bottom: 3rem;
-    color: --text-color;
+    color: white;
 }
 .contact form{
     display: flex;
@@ -571,7 +574,7 @@ span{
     padding: 0 15px;
 }
 .footer ul li a{
-    color: #333333;
+    color: white;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease-in-out;
 }
@@ -583,7 +586,7 @@ span{
     margin-top: 50px;
     text-align: center;
     font-size: 16px;
-    color: --text-color;
+    color: white;
 }
 
 
@@ -646,7 +649,7 @@ span{
     right: 0;
     width: 50%;
     padding: 1rem 3%;
-    background: rgba(230, 230, 230, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(20px);
     border-bottom-left-radius: 2rem;
     border-left: 2px solid var(--main-color);
