@@ -1,13 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    font-family: "Bahnschrift", sans-serif;
-    cursor: default;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Barlow', sans-serif;
+  cursor: default;
 }
+
 :root {
     --bg-color: #080808;
     --second-bg-color: #131313;
@@ -710,4 +711,84 @@ span{
     .services_container{
         grid-template-columns: repeat(1,1fr);
     }
+}
+/* Improved Mobile Responsive Styling */
+
+@media(max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  section {
+    padding: 6rem 5%; /* More spacing from phone edges */
+  }
+
+  .heading {
+    font-size: 4.2rem; /* Smaller heading for mobile */
+    margin: 3rem 0;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    padding: 6rem 5%;
+    text-align: center;
+  }
+
+  .home-content {
+    align-items: center;
+  }
+
+  .home-content h1 {
+    font-size: 5.5rem;
+  }
+
+  .home-content h3 {
+    font-size: 2.8rem;
+  }
+
+  .home-content p {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+
+  .home_img img {
+    width: 80vw;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .services_container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .testimonial-box .wrapper {
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+  }
+
+  .testimonial-item {
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  .contact form {
+    padding: 0 2rem;
+  }
+
+  .contact form .input-box input,
+  .contact form textarea {
+    font-size: 1.6rem;
+    padding: 2rem;
+  }
+
+  .footer ul {
+    padding: 0 2rem;
+  }
+
+  .navbar {
+    width: 100%;
+  }
 }
