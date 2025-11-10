@@ -5,14 +5,30 @@ document.addEventListener("DOMContentLoaded", function () {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("show");
+      eduObserver.unobserve(entry.target);
       } else {
         entry.target.classList.remove("show");
       }
     });
   }, { threshold: 0.2 });
   serviceBoxes.forEach(box => observer.observe(box));
+    
+    // 2. Education Timeline Animation (Animate Once)
+const timelineItems = document.querySelectorAll(".timeline-item");
 
-  // 2. Smooth Scroll Navigation
+const eduObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      eduObserver.unobserve(entry.target); // Stop observing after animation
+    }
+  });
+}, { threshold: 0.2 });
+
+timelineItems.forEach(item => eduObserver.observe(item));
+
+
+  // 3. Smooth Scroll Navigation
   document.querySelectorAll(".navbar a").forEach(link => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
@@ -28,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // 3. Toggle Menu
+  // 4. Toggle Menu
   const menuIcon = document.getElementById("menu-icon");
   const menu = document.getElementById("menu");
 
