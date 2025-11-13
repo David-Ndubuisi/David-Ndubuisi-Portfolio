@@ -53,7 +53,7 @@ timelineItems.forEach(item => eduObserver.observe(item));
     menuIcon.classList.toggle("bx-x");
   });
 
-  // 4. Active Nav Highlight
+  // 5. Active Nav Highlight
   const navLinks = document.querySelectorAll(".navbar a");
   navLinks.forEach(link => {
     link.addEventListener("click", function () {
@@ -61,4 +61,27 @@ timelineItems.forEach(item => eduObserver.observe(item));
       this.classList.add("active");
     });
   });
+    
+    // === TESTIMONIAL TAP TOGGLE (Desktop + Mobile) ===
+const testimonials = document.querySelectorAll(".testimonial-item");
+
+// Toggle open/close on click
+testimonials.forEach(item => {
+  item.addEventListener("click", (e) => {
+    e.stopPropagation(); // Prevent click from bubbling to window
+    // Close other testimonials
+    testimonials.forEach(i => {
+      if (i !== item) i.classList.remove("active");
+    });
+    // Toggle the clicked one
+    item.classList.toggle("active");
+  });
+});
+
+// Close all if clicking outside any testimonial
+window.addEventListener("click", () => {
+  testimonials.forEach(item => item.classList.remove("active"));
+});
+
+
 });
