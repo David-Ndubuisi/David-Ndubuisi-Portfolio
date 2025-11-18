@@ -133,6 +133,26 @@ hoverTargets.forEach(el => {
     el.addEventListener("mouseleave", () => cursor.classList.remove("active"));
 });
 
+// ===== PRELOADER =====
+let count = 0;
+let percentage = document.querySelector(".loader-percentage");
+let bar = document.querySelector(".loader-bar span");
+
+let loading = setInterval(() => {
+    if (count >= 100) {
+        clearInterval(loading);
+
+        document.body.classList.add("loaded");
+
+        setTimeout(() => {
+            document.getElementById("preloader").style.display = "none";
+        }, 800);
+
+    } else {
+        count++;
+        percentage.textContent = count + "%";
+    }
+}, 22); // speed of loading
 
 
 });
