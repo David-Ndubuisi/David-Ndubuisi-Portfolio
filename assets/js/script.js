@@ -180,26 +180,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    // ===== PRELOADER =====
-    let count = 0;
-    let percentage = document.querySelector(".loader-percentage");
-    let bar = document.querySelector(".loader-bar span");
-
-    let loading = setInterval(() => {
-        if (count >= 100) {
-            clearInterval(loading);
-
+    // ===== KORTY PRELOADER LOGIC =====
+    window.onload = function() {
+        const loader = document.getElementById("korty-loader");
+        
+        // We set a minimum time (2.5s) so the user actually sees the cool animation
+        // regardless of how fast the site loads.
+        setTimeout(() => {
+            
+            // 1. Slide the curtain up
+            loader.classList.add("slide-up");
+            
+            // 2. Trigger your existing content reveal animations
             document.body.classList.add("loaded");
 
+            // 3. (Optional) Remove loader from DOM after transition finishes to save memory
             setTimeout(() => {
-                document.getElementById("preloader").style.display = "none";
-            }, 800);
+                loader.style.display = "none";
+            }, 1200); // Matches CSS transition time
 
-        } else {
-            count++;
-            percentage.textContent = count + "%";
-        }
-    }, 22); // speed of loading
+        }, 3500); // Wait 2.5 seconds before starting
+    };
 
 
 });
