@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 loader.style.display = "none";
             }, 1200); // Matches CSS transition time
 
-        }, 3500); // Wait 2.5 seconds before starting
+        }, 1500); // Wait 2.5 seconds before starting
     };
 
 
