@@ -2197,7 +2197,7 @@ span {
     }
 
     .polaroid:hover {
-        transform: scale(1.9) rotate(0deg) !important;
+        transform: scale(2.4) rotate(0deg) !important;
     }
 
     .aboutme-intro {
@@ -2226,7 +2226,7 @@ span {
     }
 
     .polaroid:hover {
-        transform: scale(1.8) rotate(0deg) !important;
+        transform: scale(2.3) rotate(0deg) !important;
     }
 
     .polaroid .caption {
