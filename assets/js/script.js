@@ -181,16 +181,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // ===== KORTY PRELOADER LOGIC =====
-    window.onload = function() {
+    window.onload = function () {
         const loader = document.getElementById("korty-loader");
-        
+
         // We set a minimum time (2.5s) so the user actually sees the cool animation
         // regardless of how fast the site loads.
         setTimeout(() => {
-            
+
             // 1. Slide the curtain up
             loader.classList.add("slide-up");
-            
+
             // 2. Trigger your existing content reveal animations
             document.body.classList.add("loaded");
 
@@ -201,6 +201,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
         }, 1700); // Wait 1.7 seconds before starting
     };
+
+
+    /* ===== BACKGROUND MUSIC LOGIC ===== */
+    const music = document.getElementById("bg-music");
+    const musicBtn = document.getElementById("music-btn");
+    const musicContainer = document.querySelector(".music-container");
+    const musicIcon = document.getElementById("music-icon");
+
+    // 1. Set the volume low (0.0 to 1.0)
+    music.volume = 0.05;
+
+    let isPlaying = false;
+
+    function toggleMusic() {
+        if (isPlaying) {
+            pauseMusic();
+        } else {
+            playMusic();
+        }
+    }
+
+    function playMusic() {
+        isPlaying = true;
+        musicContainer.classList.add('playing');
+        musicIcon.classList.replace('bx-music', 'bx-pause'); // Change icon to pause
+        music.play();
+    }
+
+    function pauseMusic() {
+        isPlaying = false;
+        musicContainer.classList.remove('playing');
+        musicIcon.classList.replace('bx-pause', 'bx-music'); // Change icon back
+        music.pause();
+    }
+
+    // Button Click Event
+    musicBtn.addEventListener('click', toggleMusic);
+
+    // 2. Autoplay Bypass: Browser policies block audio until user interaction.
+    // This starts the music on the first click anywhere on the page.
+    window.addEventListener('click', () => {
+        if (!isPlaying && music.paused) {
+            playMusic();
+        }
+    }, {
+        once: true
+    }); // 'once: true' ensures this only fires the very first time
 
 
 });
