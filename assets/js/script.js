@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
+    
+    // ===== 0. INITIALIZE LENIS (PREMIUM SMOOTH SCROLL) =====
+    const lenis = new Lenis({
+        duration: 1.2, // Controls the scroll inertia 
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Gives that slick, premium ease-out feel
+        direction: 'vertical',
+        gestureDirection: 'vertical',
+        smooth: true,
+        smoothTouch: false, // Keep native scrolling on touch devices for better UX
+    });
+
+    // Request Animation Frame loop for Lenis
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+    
     // 1. Service Boxes Animation
     const serviceBoxes = document.querySelectorAll(".service_box");
     const observer = new IntersectionObserver(entries => {
@@ -32,20 +50,27 @@ document.addEventListener("DOMContentLoaded", function () {
     timelineItems.forEach(item => eduObserver.observe(item));
 
 
-    // 3. Smooth Scroll Navigation
+    // 3. Smooth Scroll Navigation (UPDATED FOR LENIS)
     document.querySelectorAll(".navbar a").forEach(link => {
         link.addEventListener("click", function (e) {
             e.preventDefault();
             const targetId = this.getAttribute("href");
-            const targetSection = document.querySelector(targetId);
-
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: "smooth"
+            
+            if (targetId && targetId.startsWith('#')) {
+                // Use Lenis to scroll instead of native scrollIntoView
+                lenis.scrollTo(targetId, {
+                    offset: 0,
+                    duration: 1.2,
+                    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
                 });
-                console.log("Scrolling to:", targetId);
-            } else {
-                console.error("Section not found:", targetId);
+                
+                // Optional: Auto-close the mobile menu when a link is clicked
+                const menu = document.getElementById("menu");
+                const menuIcon = document.getElementById("menu-icon");
+                if(menu.classList.contains("active")) {
+                    menu.classList.remove("active");
+                    menuIcon.classList.remove("bx-x");
+                }
             }
         });
     });
