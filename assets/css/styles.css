@@ -618,7 +618,7 @@ span {
 
 .service_box {
     background-color: var(--main-color);
-    height: 300px;
+    height: 320px;
     border-radius: 3rem;
     border: 5px solid transparent;
 }
@@ -634,7 +634,7 @@ span {
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-height: 200px;
+    max-height: 280px;
     justify-content: left;
     align-items: baseline;
     padding: 5rem 5rem;
@@ -1692,6 +1692,7 @@ span {
         #korty-loader {
             display: flex;
             justify-content: center;
+            justify-self: center;
             align-items: center;
             text-align: center;
         }
@@ -1709,6 +1710,38 @@ span {
             transform: none !important;
             /* stop desktop offsets */
         }
+    }
+    
+    @media (max-width: 620px) {
+    
+
+.service_box {
+    height: 490px;
+}
+
+.service_box .service_info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 280px;
+    justify-content: left;
+    align-items: baseline;
+}
+
+.service_box {
+    padding: 0rem 0rem;
+}
+        
+.service_info {
+    padding: 0rem 0rem;
+}
+
+.service_info h4 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
+    padding-bottom: 17px;
+}
     }
 
     @media (max-width: 480px) {
