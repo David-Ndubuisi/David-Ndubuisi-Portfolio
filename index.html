@@ -1,556 +1,611 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>David Ndubuisi</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css" rel="stylesheet" />
+        <!-- Basic Icons -->
+        <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet" />
+        <!-- Filled Icons -->
+        <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet" />
+        <!-- Brand Icons -->
+        <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Ndubuisi</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <!-- Basic Icons -->
-    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
-    <!-- Filled Icons -->
-    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
-    <!-- Brand Icons -->
-    <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
-</head>
+    <body>
+        <div class="cursor"></div>
 
-<body>
+        <div id="korty-loader">
+            <div class="loader-wrapper">
+                <div id="sub-top" class="sub-text">PORTFOLIO CAM</div>
 
-    <div class="cursor"></div>
+                <h1 class="korty-title">
+                    <span>&lt;</span><span>D</span><span>a</span><span>v</span><span>i</span><span>d</span><span>/</span
+                    ><span>&gt;</span>
+                </h1>
 
-    <div id="korty-loader">
-        <div class="loader-wrapper">
-            <div id="sub-top" class="sub-text">PORTFOLIO CAM</div>
-
-            <h1 class="korty-title">
-                <span>&lt;</span><span>D</span><span>a</span><span>v</span><span>i</span><span>d</span><span>/</span><span>&gt;</span>
-            </h1>
-
-            <div id="sub-bottom" class="sub-text">STANDBY MODE</div>
-        </div>
-    </div>
-
-
-    <header class="header">
-        <a href="#home" class="logo">David <span>Ndubuisi</span></a>
-
-        <i class='bx bx-menu' id="menu-icon"></i>
-
-        <nav class="navbar" id="menu">
-            <a href="#education">Education</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#aboutme">About</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <div class="video-background">
-    <video autoplay muted loop playsinline>
-      <source src="assets/images/4K%20Space_Star%20scene%20-%20Free%20M.G%20Stock%20Footage%20-%20CyberWebFX%20(1080p,%20h264).mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="overlay"></div>
-  </div>
-    <section class="home" id="home">
-        <div class="home-content">
-
-            <h1>Hi, It's <span>David</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
-            <p>I'm a Creative and detail-oriented Frontend Web Developer with 4 years of experience so far, building responsive and user-centric web applications. Proficient in HTML5, CSS3, JavaScript (ES6+), and modern frameworks like React.js. Passionate about clean code, intuitive UI/UX, and staying updated with emerging web technologies. Adept at turning complex problems into simple, user-friendly designs.</p>
-
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/david-ndubuisi-b72495273/"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/David-Ndubuisi"><i class='bx bxl-github'></i></a>
-                <a href="https://www.instagram.com/1nfer3d/"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="https://wa.me/+2349096771128?text=Hey%20David👋"><i class='bx bxl-whatsapp'></i></a>
-            </div>
-
-            <div class="btn-group">
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#contact" class="btn">Contact / Reach out</a>
+                <div id="sub-bottom" class="sub-text">STANDBY MODE</div>
             </div>
         </div>
 
-        <div class="home_img">
-            <img src="assets/images/Me.JPG">
-        </div>
-    </section>
+        <header class="header">
+            <a href="#home" class="logo">David <span>Ndubuisi</span></a>
 
-    <section class="education" id="education">
-        <h2 class="heading">My Education</h2>
+            <i class="bx bx-menu" id="menu-icon"></i>
 
-        <div class="timeline-items">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2021</div>
-                <div class="timeline-content">
-                    <h3>High School</h3>
-                    <p>I attended a lot of different schools over the course of my Primary to Secondary school years across 2 different states (Lagos &amp; Abuja), but I finished from Great Treasured Children Academy (not the coolest name out there I know lol). I passed both my <abbr title="West African Examination Council">WAEC</abbr> &amp; <abbr title="National Examinations Council">NECO</abbr> exams and also did really good on my <abbr title="Joint Admissions and Matriculation Board">JAMB</abbr> <abbr title="Unified Tertiary Matriculation Examination">UTME</abbr>. It was towards the end of my High School years that I had realised I wanted my career path to be something inclinded with the Tech Industry.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2022</div>
-                <div class="timeline-content">
-                    <h3>Higher Institution</h3>
-                    <p>Having decided that I want to be in the Tech Industry, I did my higher education at <a href="https://www.afrihub.com/"><span>AfriHub-GDLI</span></a>. In as much as I am self taught for the most part, it was here that I got the basic knowledge &amp; foundation of web-development and some other tech fields. I was a Computer Science student so I was made to touch on alot of different fields, but I chose to 'Major' in the Web field profesionally.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2023</div>
-                <div class="timeline-content">
-                    <h3>Online Certification</h3>
-                    <p>Towards by my final year with AfriHub I signed up for a Session with <a href="https://altschoolafrica.com/"><span>AltSchool Africa</span></a> one of the most renowed online Innovative schools across Africa. I was under the School of Engineering, specifically the Frontend programme and graduated with a 3.3/4 GPA and was sent my certificate as a softcopy afterwards. I really enjoyed my time with them and the People I met during the programme. I learnt alot of more modern techniques and approaches... that's what stood out for me the most during my time with them.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2024</div>
-                <div class="timeline-content">
-                    <h3>Internship</h3>
-                    <p>Lorem ipsium dolor et sit amet cosecutur adipisicing elit. Molestiae numquam dolores dolorem adipisci recusandae, exnescuint. Voluptatum voluptates quasi tempora. </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <h2 class="heading"><span>Some</span> of my Services</h2>
-
-        <div class="services_container">
-            <div class="service_box hidden">
-                <div class="service_info">
-                    <h4>Frontend Development</h4>
-                    <p>I build fast, responsive, and highly interactive web applications. Making use of modern stacks like React, JavaScript, and Tailwind CSS, I turn complex technical requirements into clean &amp; functional user interfaces. If it needs to be scalable, efficient, and seamless across all devices, I’ve got it covered for sure.</p>
-                </div>
-            </div>
-            <div class="service_box hidden">
-                <div class="service_info">
-                    <h4>Custom Web Applications</h4>
-                    <p>Beyond normal pages, I also engineer dynamic web applications that can have alot of cool features tailored to specific needs. Whether it's integrating complex media processing, building a content management portal, or designing intuitive dashboards, I focus on delivering robust tools that is centered around the user.</p>
-                </div>
-            </div>
-            <div class="service_box hidden">
-                <div class="service_info">
-                    <h4>UI/UX Web Design</h4>
-                    <p>I help you transform conceptual ideas into striking intuitive digital experiences. Every layout is thoroughly crafted with the focus being usability, consistency, and modern aesthetics, so as to ensure your interface doesn't just capture attention... It retains it. By prioritizing the user’s journey through the site, I engineer structures that feel natural, seamless, and undeniably premium.</p>
-                </div>
-            </div>
-            <div class="service_box hidden">
-                <div class="service_info">
-                    <h4>Site Redesign</h4>
-                    <p>Already have a platform that feels stuck in the past? I can easily revitalise your websites, modernizing outdated aesthetics with contemporary design and intuitive navigation styles &amp; structures. I meticulously refine your existing codebase and layout to boost performance and elevate the total user experience, making sure your digital presence remains both competitive and visually arresting.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects-section">
-        <div class="sticky-wrapper">
-            <div class="projects-header">
-                <h2>Here's<br>What I Got <span class="arrow">→</span></h2>
-                <p class="projects-sub">Scroll to explore my work</p>
-            </div>
-
-            <div class="projects-container">
-                <!-- PROJECT 1 -->
-                <div class="project-card">
-                    <img src="assets/images/Capture2.PNG" alt="AgentConnect">
-                    <div class="project-info">
-                        <h3>AgentConnect</h3>
-                        <p class="stack">React • Tailwind • Firebase</p>
-                        <p class="desc">
-                            A smart real estate platform for viewing listings, exploring agents,
-                            and managing appointments with a clean, responsive UI.
-                        </p>
-                    </div>
-                    <a href="https://agentconnect1.netlify.app/" target="_blank" class="project-link"></a>
-                </div>
-
-                <!-- PROJECT 2 -->
-                <div class="project-card">
-                    <img src="assets/images/Capture.PNG" alt="ECOLIFE">
-                    <div class="project-info">
-                        <h3>ECOLIFE</h3>
-                        <p class="stack">HTML • CSS • JavaScript • PHP • MySQL</p>
-                        <p class="desc">
-                            A sustainability-focused learning platform with login, registration,
-                            and educational content for eco-friendly living.
-                        </p>
-                    </div>
-                    <a href="https://ecolife-project.infinityfreeapp.com/index.php" target="_blank" class="project-link"></a>
-                </div>
-
-                <!-- PROJECT 3 -->
-                <div class="project-card">
-                    <img src="assets/images/Capture3.PNG" alt="PixelNest Studio">
-                    <div class="project-info">
-                        <h3>PixelNest Studio</h3>
-                        <p class="stack">HTML • CSS • JavaScript</p>
-                        <p class="desc">
-                            A design studio website built with elegant animations and
-                            responsive layouts for branding-focused clients <br> (I'm only one half of the people that made this site).
-                        </p>
-                    </div>
-                    <a href="https://pixelneststudio25.github.io/PixelNest-Studio-NG-/" target="_blank" class="project-link"></a>
-                </div>
-
-                <!-- PROJECT 4 -->
-                <div class="project-card">
-                    <img src="assets/images/Capture8.JPG" alt="FPLI">
-                    <div class="project-info">
-                        <h3>FPLI</h3>
-                        <p class="stack">HTML • CSS • JavaScript</p>
-                        <p class="desc">
-                            A sporting football league, designed to inform users of the
-                            different programmes and gives the users the option to register with the organisation.
-                        </p>
-                    </div>
-                    <a href="https://fplintl.netlify.app/" target="_blank" class="project-link"></a>
-                </div>
-
-                <!-- PROJECT 5 -->
-                <div class="project-card">
-                    <img src="assets/images/Capture4.PNG" alt="Skeemstores">
-                    <div class="project-info">
-                        <h3>Skeemstores</h3>
-                        <p class="stack">HTML • CSS • JavaScript</p>
-                        <p class="desc">
-                            An E-commerce website focused mainly on selling Jewellry
-                            among other things, using Javascript for cart and order placement.
-                        </p>
-                    </div>
-                    <a href="https://skeemstores.netlify.app/" target="_blank" class="project-link"></a>
-                </div>
-
-                <!-- PROJECT 5 -->
-                <div class="project-card">
-                    <img src="assets/images/Capture5.JPG" alt="Thumbnail Generator">
-                    <div class="project-info">
-                        <h3>Thumbnail Generator</h3>
-                        <p class="stack">React • API • HTML5 Canvas</p>
-                        <p class="desc">
-                            A Web App for extracting frames from videos and desiging them be to
-                            used as thumbails for videos.  
-                        </p>
-                    </div>
-                    <a href="https://elo-oghene-udono-canva-thumbnail-gen.netlify.app/" target="_blank" class="project-link"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== ABOUT ME SECTION ===== -->
-    <section id="aboutme" class="aboutme-section">
-        <h2 class="heading">A <span>Little</span> About Me</h2>
-
-        <div class="aboutme-container">
-            <!-- Left Side: Pegboard with Polaroids -->
-            <div class="pegboard-wrapper">
-                <div class="pegboard">
-                    <!-- Polaroid Photo 1 -->
-                    <div class="polaroid polaroid-1" data-caption="Summer vibes">
-                        <div class="polaroid-inner">
-                            <img src="assets/images/polaroid2.jpg" alt="Photo 1">
-                            <span class="caption">Me &amp; my Bitmoji<br>(We so tuff)</span>
-                        </div>
-                    </div>
-
-                    <!-- Polaroid Photo 2 -->
-                    <div class="polaroid polaroid-2" data-caption="Code life">
-                        <div class="polaroid-inner">
-                            <img src="assets/images/polaroid1.jpg" alt="Photo 2">
-                            <span class="caption">Calm luh fit</span>
-                        </div>
-                    </div>
-
-                    <!-- Polaroid Photo 3 -->
-                    <div class="polaroid polaroid-3" data-caption="Good times">
-                        <div class="polaroid-inner">
-                            <img src="assets/images/polaroid3.jpg" alt="Photo 3">
-                            <span class="caption">Might delete later idk</span>
-                        </div>
-                    </div>
-
-                    <!-- Decorative Elements -->
-                    <div class="pegboard-item pin1">
-                        <img src="assets/images/Pin_Png_-_Push_Pin_Clipart__Transparent_Png_1280x1204__-_PngFind-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item pin2">
-                        <img src="assets/images/Pin_Png_-_Push_Pin_Clipart__Transparent_Png_1280x1204__-_PngFind-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item pin3">
-                        <img src="assets/images/Pin_Png_-_Push_Pin_Clipart__Transparent_Png_1280x1204__-_PngFind-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item comic">
-                        <img src="assets/images/download__4_-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item manga">
-                        <img src="assets/images/Satoru_Gojo_Stickers_for_Sale-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item year">
-                        <img src="assets/images/download__10_-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item toji">
-                        <img src="assets/images/Gemini_Generated_Image_fy9vkufy9vkufy9v-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item op">
-                        <img src="assets/images/One_piece_sticker-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item spidey">
-                        <img src="assets/images/download__5_-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item statue">
-                        <img src="assets/images/download__3_-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item david">
-                        <img src="assets/images/download__2_-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item extrovert">
-                        <img src="assets/images/ChatGPT_Image_Feb_25__2026__05_19_47_PM-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item ball">
-                        <img src="assets/images/download__14_-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item gunners">
-                        <img src="assets/images/Arsenal_Gunners_1886_Magnet-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item joga">
-                        <img src="assets/images/ChatGPT_Image_Feb_25__2026__05_39_39_PM-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item tag">
-                        <img src="assets/images/Marvel%20Comic%20Tag.jpg">
-                    </div>
-                    <div class="pegboard-item rated">
-                        <img src="assets/images/download%20(6).jfif">
-                    </div>
-                    <div class="pegboard-item barcode">
-                        <img src="assets/images/inverted_barcode-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item kendrick">
-                        <img src="assets/images/download__13_-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item alright">
-                        <img src="assets/images/download%20(3).jpg">
-                    </div>
-                    <div class="pegboard-item eight_ball">
-                        <img src="assets/images/download__8_-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item qrcode">
-                        <img src="assets/images/Confuse%20Surveilling%20Scanner%20-%20Undecodable%20Qr%20Code%20Sticker.jpg">
-                    </div>
-                    <div class="pegboard-item nike">
-                        <img src="assets/images/download__6_-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item grills">
-                        <img src="assets/images/download__4_-removebg-preview%20(1).png">
-                    </div>
-                    <div class="pegboard-item error">
-                        <img src="assets/images/download__31_-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item laptop">
-                        <img src="assets/images/laptop_logo_sticker___Download_free_png_of_PNG_Retro_hands_typing_laptop_illustration__by_Hein-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item netflix">
-                        <img src="assets/images/Brand_Stickers_for_Sale-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item boondocks">
-                        <img src="assets/images/Boondocks_Trio_Sticker-removebg-preview.png">
-                    </div>
-                    <div class="pegboard-item camera">
-                        <img src="assets/images/Gemini_Generated_Image_xdc15nxdc15nxdc1-removebg-preview.png">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Side: Text Content -->
-            <div class="aboutme-content">
-                <h3 class="aboutme-intro">My name is <span class="highlight-name">David</span>
-                    <p>(The most Generic name out there lmao).</p>
-                </h3>
-
-                <p class="aboutme-text">
-                    I’m a 19 year old, self-taught frontend developer and creative who enjoys turning ideas into clean, interactive websites and digital experiences. I like things that look good and feel good to use—because what’s the point if it’s ugly or confusing?
-                </p>
-
-                <p class="aboutme-text">
-                    Based in Abuja, Nigeria, I spend my time building responsive interfaces, experimenting with animations, and obsessing over small UI details that most people won’t notice (but I will).
-                </p>
-
-                <p class="aboutme-text">
-                    My work focuses on frontend development, modern web design, and building interfaces that actually make sense. I also mess around with backend stuff, UI design tools, and whatever new tech catches my attention—because curiosity is half the job.
-                </p>
-
-                <p class="aboutme-text">
-                    If you’re working on something cool (or slightly chaotic) and need a developer who cares way too much about pixel alignment, feel free to reach out.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="me" class="founder-quote services">
-        <div class="quote-card">
-
-            <div class="quote-icon"><i class="bxl bx-spotify"></i></div>
-
-            <div class="quote-text">
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1KnvXxHptPg63iksxeP87v?utm_source=generator&theme=0" width="100%" height="552" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-
-            <div class="quote-footer1">
-                <div>
-                    <p>I tend to listen to music alot whenever I'm Programming or just working in General, that being said I love using Spotify (Mostly cus it's the most popular streaming app lol). I have a bunch playlists I listen to but this one is the "<span>Cream of the Crop</span>", the very best for me... You can tell my music taste isn't exactly niche, I just like any thing that sounds Good to me really.</p>
-                </div>
-            </div>
-
-            <div class="quote-footer">
-                <img src="assets/images/Me.JPG">
-                <div>
-                    <strong>1NFER3D</strong><br>
-                    <span>Master of this Manor</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="testimonials" id="testimonials">
-        <div class="testimonial-box">
-            <h2 class="heading" id="theading">Here's What some People had to say About <span>Me</span></h2>
-            <div class="wrapper">
-                <div class="testimonial-item">
-                    <div class="profile">
-                        <img src="assets/images/Profile1.jpeg">
-                        <h2>Danielle Simmers</h2>
-                    </div>
-                    <div class="review">
-                        <div class="rating">
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                        </div>
-                        <p>lorem ipsium dolor et sit amet cosecutur adipisicing elit. Molestiae numquam dolores dolorem adipisci recusandae, exnescuint. Voluptatum voluptates quasi tempora hic facilis veritatis consequutur dolorius dolor provident, eligendi nam? Modi?</p>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="profile">
-                        <img src="assets/images/Profile2.png">
-                        <h2>Dapo Nasir</h2>
-                    </div>
-                    <div class="review">
-                        <div class="rating">
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                        </div>
-                        <p>David was a dedicated intern who has been an asset to our software development teams. He is a fast learner, consistently demonstrates initiative, and quickly adapts to new challenges. I am confident that he will continue to advance successfully in his software development career.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="profile">
-                        <img src="assets/images/Profile3.jpeg">
-                        <h2>Keisha Jamal</h2>
-                    </div>
-                    <div class="review">
-                        <div class="rating">
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                        </div>
-                        <p>lorem ipsium dolor et sit amet cosecutur adipisicing elit. Molestiae numquam dolores dolorem adipisci recusandae, exnescuint. Voluptatum voluptates quasi tempora hic facilis veritatis consequutur dolorius dolor provident, eligendi nam? Modi?</p>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="profile">
-                        <img src="assets/images/Profile1.jpeg">
-                        <h2>Danielle Simmers</h2>
-                    </div>
-                    <div class="review">
-                        <div class="rating">
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                        </div>
-                        <p>lorem ipsium dolor et sit amet cosecutur adipisicing elit. Molestiae numquam dolores dolorem adipisci recusandae, exnescuint. Voluptatum voluptates quasi tempora hic facilis veritatis consequutur dolorius dolor provident, eligendi nam? Modi?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Wanna reach out to <span>Me?</span></h2>
-        <form action="https://formsubmit.co/david.ndubuisi006@gmail.com" method="POST">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" name="name" placeholder="Your Full Name">
-                    <input type="email" name="email" placeholder="Your E-mail Address">
-                </div>
-                <div class="input-box">
-                    <input type="tel" name="number" placeholder="Your Phone Number">
-                    <input type="text" name="subject" placeholder="Subject">
-                </div>
-            </div>
-            <div class="input-group2">
-                <textarea cols="30" rows="10" name="msg" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </div>
-        </form>
-    </section>
-
-    <footer class="footer">
-        <div class="social">
-            <a href="https://www.linkedin.com/in/david-ndubuisi-b72495273/"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/David-Ndubuisi"><i class='bx bxl-github'></i></a>
-            <a href="https://www.instagram.com/1nfer3d/"><i class='bx bxl-instagram-alt'></i></a>
-            <a href="https://wa.me/+2349096771128?text=Hey%20David👋"><i class='bx bxl-whatsapp'></i></a>
-        </div>
-        <ul class="list">
-            <li>
-                <a href="#">FAQs</a>
-            </li>
-            <li>
+            <nav class="navbar" id="menu">
+                <a href="#education">Education</a>
                 <a href="#services">Services</a>
-            </li>
-            <li>
-                <a href="#">About Me</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-            <li>
+                <a href="#projects">Projects</a>
+                <a href="#aboutme">About</a>
                 <a href="#testimonials">Testimonials</a>
-            </li>
-        </ul>
-        <p class="copyright">© David Ndubuisi | All Rights Reserved</p>
-    </footer>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-    <script src="assets/js/script.js" defer></script>
-    <div class="music-container">
-        <button id="music-btn">
-            <i class='bx bx-music' id="music-icon"></i>
-        </button>
-        <div class="music-info">
-            <span id="song-title">Timeless</span>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source
+                    src="assets/images/4K%20Space_Star%20scene%20-%20Free%20M.G%20Stock%20Footage%20-%20CyberWebFX%20(1080p,%20h264).mp4"
+                    type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
         </div>
-        <audio id="bg-music" loop>
-            <source src="assets/sounds/Timeless.mp3" type="audio/mpeg">
-        </audio>
-    </div>
-</body>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Hi, It's <span>David</span></h1>
+                <h3 class="text-animation">I'm a <span></span></h3>
+                <p>
+                    I'm a creative and detail-oriented Frontend Web Developer with 4 years of experience so far,
+                    building responsive and user-centric web applications. Proficient in HTML5, CSS3, JavaScript (ES6+),
+                    and modern frameworks like React.js. Passionate about clean code, intuitive UI/UX, and staying
+                    updated with emerging web technologies. Adept at turning complex problems into simple, user-friendly
+                    designs.
+                </p>
 
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/david-ndubuisi-b72495273/"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/David-Ndubuisi"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.instagram.com/1nfer3d/"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="https://wa.me/+2349096771128?text=Hey%20David👋"><i class="bx bxl-whatsapp"></i></a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#" class="btn">Hire Me</a>
+                    <a href="#contact" class="btn">Contact / Reach out</a>
+                </div>
+            </div>
+
+            <div class="home_img">
+                <img src="assets/images/Me.JPG" />
+            </div>
+        </section>
+
+        <section class="education" id="education">
+            <h2 class="heading">My Education</h2>
+
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <h3>High School</h3>
+                        <p>
+                            I attended a lot of different schools over the course of my Primary to Secondary school
+                            years across 2 different states (Lagos &amp; Abuja), but I finished from Great Treasured
+                            Children Academy (not the coolest name out there I know lol). I passed both my
+                            <abbr title="West African Examination Council">WAEC</abbr> &amp;
+                            <abbr title="National Examinations Council">NECO</abbr> exams and also did really good on my
+                            <abbr title="Joint Admissions and Matriculation Board">JAMB</abbr>
+                            <abbr title="Unified Tertiary Matriculation Examination">UTME</abbr>. It was towards the end
+                            of my High School years that I had realised I wanted my career path to be something
+                            inclined with the Tech Industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>Higher Institution</h3>
+                        <p>
+                            Having decided that I want to be in the Tech Industry, I did my higher education at
+                            <a href="https://www.afrihub.com/"><span>AfriHub-GDLI</span></a
+                            >. In as much as I am self taught for the most part, it was here that I got the basic
+                            knowledge &amp; foundation of web-development and some other tech fields. I was a Computer
+                            Science student so I was made to touch on alot of different fields, but I chose to 'Major'
+                            in the Web field professionally.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Online Certification</h3>
+                        <p>
+                            Towards by my final year with AfriHub I signed up for a Session with
+                            <a href="https://altschoolafrica.com/"><span>AltSchool Africa</span></a> one of the most
+                            renowed online Innovative schools across Africa. I was under the School of Engineering,
+                            specifically the Frontend programme and graduated with a 3.3/4 GPA and was sent my
+                            certificate as a softcopy afterwards. I really enjoyed my time with them and the People I
+                            met during the programme. I learnt alot of more modern techniques and approaches... that's
+                            what stood out for me the most during my time with them.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Internship</h3>
+                        <p>
+                            Shortly after my time with AfriHub (like a month after or 2), One of my friends helped me
+                            score an internship gig with a growing sports organisation for kids called
+                            <a href="https://playtogether.org.ng/"><span>Play Together Initiative</span></a>. So for a short time I
+                            was helping with the initial stage of the deisgn and development of the organisation website,
+                            Working very closely with my boss at the time (If you want to know what he had to say about
+                            me check out the testimonials section). Here I learnt how to work with clients for the first
+                            time and standard professional practice. It wasn't a paid internship but I didn't
+                            mind at the time though because it counted as experience, I guess its not always about the money lol.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h2 class="heading"><span>Some</span> of my Services</h2>
+
+            <div class="services_container">
+                <div class="service_box hidden">
+                    <div class="service_info">
+                        <h4>Frontend Development</h4>
+                        <p>
+                            I build fast, responsive, and highly interactive web applications. Making use of modern
+                            stacks like React, JavaScript, and Tailwind CSS, I turn complex technical requirements into
+                            clean &amp; functional user interfaces. If it needs to be scalable, efficient, and seamless
+                            across all devices, I’ve got it covered for sure.
+                        </p>
+                    </div>
+                </div>
+                <div class="service_box hidden">
+                    <div class="service_info">
+                        <h4>Custom Web Applications</h4>
+                        <p>
+                            Beyond normal pages, I also engineer dynamic web applications that can have alot of cool
+                            features tailored to specific needs. Whether it's integrating complex media processing,
+                            building a content management portal, or designing intuitive dashboards, I focus on
+                            delivering robust tools that is centered around the user.
+                        </p>
+                    </div>
+                </div>
+                <div class="service_box hidden">
+                    <div class="service_info">
+                        <h4>UI/UX Web Design</h4>
+                        <p>
+                            I help you transform conceptual ideas into striking intuitive digital experiences. Every
+                            layout is thoroughly crafted with the focus being usability, consistency, and modern
+                            aesthetics, so as to ensure your interface doesn't just capture attention... It retains it.
+                            By prioritizing the user’s journey through the site, I engineer structures that feel
+                            natural, seamless, and undeniably premium.
+                        </p>
+                    </div>
+                </div>
+                <div class="service_box hidden">
+                    <div class="service_info">
+                        <h4>Site Redesign</h4>
+                        <p>
+                            Already have a platform that feels stuck in the past? I can easily revitalise your websites,
+                            modernizing outdated aesthetics with contemporary design and intuitive navigation styles
+                            &amp; structures. I meticulously refine your existing codebase and layout to boost
+                            performance and elevate the total user experience, making sure your digital presence remains
+                            both competitive and visually arresting.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="sticky-wrapper">
+                <div class="projects-header">
+                    <h2>Here's<br />What I Got <span class="arrow">→</span></h2>
+                    <p class="projects-sub">Scroll to explore my work</p>
+                </div>
+
+                <div class="projects-container">
+                    <!-- PROJECT 1 -->
+                    <div class="project-card">
+                        <img src="assets/images/Capture2.PNG" alt="AgentConnect" />
+                        <div class="project-info">
+                            <h3>AgentConnect</h3>
+                            <p class="stack">React • Tailwind • Firebase</p>
+                            <p class="desc">
+                                A smart real estate platform for viewing listings, exploring agents, and managing
+                                appointments with a clean, responsive UI.
+                            </p>
+                        </div>
+                        <a href="https://agentconnect1.netlify.app/" target="_blank" class="project-link"></a>
+                    </div>
+
+                    <!-- PROJECT 2 -->
+                    <div class="project-card">
+                        <img src="assets/images/Capture.PNG" alt="ECOLIFE" />
+                        <div class="project-info">
+                            <h3>ECOLIFE</h3>
+                            <p class="stack">HTML • CSS • JavaScript • PHP • MySQL</p>
+                            <p class="desc">
+                                A sustainability-focused learning platform with login, registration, and educational
+                                content for eco-friendly living.
+                            </p>
+                        </div>
+                        <a
+                            href="https://ecolife-project.infinityfreeapp.com/index.php"
+                            target="_blank"
+                            class="project-link"></a>
+                    </div>
+
+                    <!-- PROJECT 3 -->
+                    <div class="project-card">
+                        <img src="assets/images/Capture3.PNG" alt="PixelNest Studio" />
+                        <div class="project-info">
+                            <h3>PixelNest Studio</h3>
+                            <p class="stack">HTML • CSS • JavaScript</p>
+                            <p class="desc">
+                                A design studio website built with elegant animations and responsive layouts for
+                                branding-focused clients <br />
+                                (I'm only one half of the people that made this site).
+                            </p>
+                        </div>
+                        <a
+                            href="https://pixelneststudio25.github.io/PixelNest-Studio-NG-/"
+                            target="_blank"
+                            class="project-link"></a>
+                    </div>
+
+                    <!-- PROJECT 4 -->
+                    <div class="project-card">
+                        <img src="assets/images/Capture1.PNG" alt="FPLI" />
+                        <div class="project-info">
+                            <h3>FPLI</h3>
+                            <p class="stack">HTML • CSS • JavaScript</p>
+                            <p class="desc">
+                                A sporting football league, designed to inform users of the different programmes and
+                                gives the users the option to register with the organisation.
+                            </p>
+                        </div>
+                        <a href="https://fplintl.netlify.app/" target="_blank" class="project-link"></a>
+                    </div>
+
+                    <!-- PROJECT 5 -->
+                    <div class="project-card">
+                        <img src="assets/images/Capture4.PNG" alt="Skeemstores" />
+                        <div class="project-info">
+                            <h3>Skeemstores</h3>
+                            <p class="stack">HTML • CSS • JavaScript</p>
+                            <p class="desc">
+                                An E-commerce website focused mainly on selling Jewellry among other things, using
+                                Javascript for cart and order placement.
+                            </p>
+                        </div>
+                        <a href="https://skeemstores.netlify.app/" target="_blank" class="project-link"></a>
+                    </div>
+
+                    <!-- PROJECT 5 -->
+                    <div class="project-card">
+                        <img src="assets/images/Capture5.JPG" alt="Thumbnail Generator" />
+                        <div class="project-info">
+                            <h3>Thumbnail Generator</h3>
+                            <p class="stack">React • API • HTML5 Canvas</p>
+                            <p class="desc">
+                                A Web App for extracting frames from videos and desiging them be to used as thumbails
+                                for videos.
+                            </p>
+                        </div>
+                        <a
+                            href="https://elo-oghene-udono-canva-thumbnail-gen.netlify.app/"
+                            target="_blank"
+                            class="project-link"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT ME SECTION ===== -->
+        <section id="aboutme" class="aboutme-section">
+            <h2 class="heading">A <span>Little</span> About Me</h2>
+
+            <div class="aboutme-container">
+                <!-- Left Side: Pegboard with Polaroids -->
+                <div class="pegboard-wrapper">
+                    <div class="pegboard">
+                        <!-- Polaroid Photo 1 -->
+                        <div class="polaroid polaroid-1" data-caption="Summer vibes">
+                            <div class="polaroid-inner">
+                                <img src="assets/images/polaroid2.jpg" alt="Photo 1" />
+                                <span class="caption">Me &amp; my Bitmoji<br />(We so tuff)</span>
+                            </div>
+                        </div>
+
+                        <!-- Polaroid Photo 2 -->
+                        <div class="polaroid polaroid-2" data-caption="Code life">
+                            <div class="polaroid-inner">
+                                <img src="assets/images/polaroid1.jpg" alt="Photo 2" />
+                                <span class="caption">Calm luh fit</span>
+                            </div>
+                        </div>
+
+                        <!-- Polaroid Photo 3 -->
+                        <div class="polaroid polaroid-3" data-caption="Good times">
+                            <div class="polaroid-inner">
+                                <img src="assets/images/polaroid3.jpg" alt="Photo 3" />
+                                <span class="caption">Might delete later idk</span>
+                            </div>
+                        </div>
+
+                        <!-- Decorative Elements -->
+                        <div class="pegboard-item pin1">
+                            <img
+                                src="assets/images/Pin_Png_-_Push_Pin_Clipart__Transparent_Png_1280x1204__-_PngFind-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item pin2">
+                            <img
+                                src="assets/images/Pin_Png_-_Push_Pin_Clipart__Transparent_Png_1280x1204__-_PngFind-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item pin3">
+                            <img
+                                src="assets/images/Pin_Png_-_Push_Pin_Clipart__Transparent_Png_1280x1204__-_PngFind-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item comic">
+                            <img src="assets/images/download__4_-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item manga">
+                            <img src="assets/images/Satoru_Gojo_Stickers_for_Sale-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item year">
+                            <img src="assets/images/download__10_-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item toji">
+                            <img src="assets/images/Gemini_Generated_Image_fy9vkufy9vkufy9v-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item op">
+                            <img src="assets/images/One_piece_sticker-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item spidey">
+                            <img src="assets/images/download__5_-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item statue">
+                            <img src="assets/images/download__3_-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item david">
+                            <img src="assets/images/download__2_-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item extrovert">
+                            <img src="assets/images/ChatGPT_Image_Feb_25__2026__05_19_47_PM-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item ball">
+                            <img src="assets/images/download__14_-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item gunners">
+                            <img src="assets/images/Arsenal_Gunners_1886_Magnet-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item joga">
+                            <img src="assets/images/ChatGPT_Image_Feb_25__2026__05_39_39_PM-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item tag">
+                            <img src="assets/images/Marvel%20Comic%20Tag.jpg" />
+                        </div>
+                        <div class="pegboard-item rated">
+                            <img src="assets/images/download%20(6).jfif" />
+                        </div>
+                        <div class="pegboard-item barcode">
+                            <img src="assets/images/inverted_barcode-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item kendrick">
+                            <img src="assets/images/download__13_-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item alright">
+                            <img src="assets/images/download%20(3).jpg" />
+                        </div>
+                        <div class="pegboard-item eight_ball">
+                            <img src="assets/images/download__8_-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item qrcode">
+                            <img
+                                src="assets/images/Confuse%20Surveilling%20Scanner%20-%20Undecodable%20Qr%20Code%20Sticker.jpg" />
+                        </div>
+                        <div class="pegboard-item nike">
+                            <img src="assets/images/download__6_-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item grills">
+                            <img src="assets/images/download__4_-removebg-preview%20(1).png" />
+                        </div>
+                        <div class="pegboard-item error">
+                            <img src="assets/images/download__31_-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item laptop">
+                            <img
+                                src="assets/images/laptop_logo_sticker___Download_free_png_of_PNG_Retro_hands_typing_laptop_illustration__by_Hein-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item netflix">
+                            <img src="assets/images/Brand_Stickers_for_Sale-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item boondocks">
+                            <img src="assets/images/Boondocks_Trio_Sticker-removebg-preview.png" />
+                        </div>
+                        <div class="pegboard-item camera">
+                            <img src="assets/images/Gemini_Generated_Image_xdc15nxdc15nxdc1-removebg-preview.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Text Content -->
+                <div class="aboutme-content">
+                    <h3 class="aboutme-intro">
+                        My name is <span class="highlight-name">David</span>
+                        <p>(The most Generic name out there lmao).</p>
+                    </h3>
+
+                    <p class="aboutme-text">
+                        I’m a 19 year old, self-taught frontend developer and creative who enjoys turning ideas into
+                        clean, interactive websites and digital experiences. I like things that look good and feel good
+                        to use—because what’s the point if it’s ugly or confusing?
+                    </p>
+
+                    <p class="aboutme-text">
+                        Based in Abuja, Nigeria, I spend my time building responsive interfaces, experimenting with
+                        animations, and obsessing over small UI details that most people won’t notice (but I will).
+                    </p>
+
+                    <p class="aboutme-text">
+                        My work focuses on frontend development, modern web design, and building interfaces that
+                        actually make sense. I also mess around with backend stuff, UI design tools, and whatever new
+                        tech catches my attention—because curiosity is half the job.
+                    </p>
+
+                    <p class="aboutme-text">
+                        If you’re working on something cool (or slightly chaotic) and need a developer who cares way too
+                        much about pixel alignment, feel free to reach out.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="me" class="founder-quote services">
+            <div class="quote-card">
+                <div class="quote-icon"><i class="bxl bx-spotify"></i></div>
+
+                <div class="quote-text">
+                    <iframe
+                        data-testid="embed-iframe"
+                        style="border-radius: 12px"
+                        src="https://open.spotify.com/embed/playlist/1KnvXxHptPg63iksxeP87v?utm_source=generator&theme=0"
+                        width="100%"
+                        height="552"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+
+                <div class="quote-footer1">
+                    <div>
+                        <p>
+                            I tend to listen to music alot whenever I'm Programming or just working in General, that
+                            being said I love using Spotify (Mostly cus it's the most popular streaming app lol). I have
+                            a bunch playlists I listen to but this one is the "<span>Cream of the Crop</span>", the very
+                            best for me... You can tell my music taste isn't exactly niche, I just like any thing that
+                            sounds Good to me really.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="quote-footer">
+                    <img src="assets/images/Me.JPG" />
+                    <div>
+                        <strong>1NFER3D</strong><br />
+                        <span>Master of this Manor</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <div class="testimonial-box">
+                <h2 class="heading" id="theading">Here's What some People had to say About <span>Me</span></h2>
+                <div class="wrapper">
+                    <div class="testimonial-item">
+                        <div class="profile">
+                            <img src="assets/images/Profile2.png" />
+                            <h2>Dapo Nasir</h2>
+                        </div>
+                        <div class="review">
+                            <div class="rating">
+                                <i class="bx bxs-star" id="star"></i>
+                                <i class="bx bxs-star" id="star"></i>
+                                <i class="bx bxs-star" id="star"></i>
+                                <i class="bx bxs-star" id="star"></i>
+                            </div>
+                            <p>
+                                David was a dedicated intern who has been an asset to our software development teams. He
+                                is a fast learner, consistently demonstrates initiative, and quickly adapts to new
+                                challenges. I am confident that he will continue to advance successfully in his software
+                                development career.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading">Wanna reach out to <span>Me?</span></h2>
+            <form action="https://formsubmit.co/david.ndubuisi006@gmail.com" method="POST">
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Your Full Name" />
+                        <input type="email" name="email" placeholder="Your E-mail Address" />
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" name="number" placeholder="Your Phone Number" />
+                        <input type="text" name="subject" placeholder="Subject" />
+                    </div>
+                </div>
+                <div class="input-group2">
+                    <textarea cols="30" rows="10" name="msg" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" class="btn" />
+                </div>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/david-ndubuisi-b72495273/"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/David-Ndubuisi"><i class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/1nfer3d/"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="https://wa.me/+2349096771128?text=Hey%20David👋"><i class="bx bxl-whatsapp"></i></a>
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="#">FAQs</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#">About Me</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#testimonials">Testimonials</a>
+                </li>
+            </ul>
+            <p class="copyright">© David Ndubuisi | All Rights Reserved</p>
+        </footer>
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+        <script src="assets/js/script.js" defer></script>
+        <div class="music-container">
+            <button id="music-btn">
+                <i class="bx bx-music" id="music-icon"></i>
+            </button>
+            <div class="music-info">
+                <span id="song-title">Timeless</span>
+            </div>
+            <audio id="bg-music" loop>
+                <source src="assets/sounds/Timeless.mp3" type="audio/mpeg" />
+            </audio>
+        </div>
+    </body>
 </html>
