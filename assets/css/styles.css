@@ -1162,7 +1162,7 @@ span {
     background: rgba(0, 0, 0, 0.7);
     border: 3px solid rgba(238, 238, 238, 0.2);
     border-radius: 2rem;
-    padding: 13px 30px 10px 30px;
+    padding: 13px 30px 30px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
